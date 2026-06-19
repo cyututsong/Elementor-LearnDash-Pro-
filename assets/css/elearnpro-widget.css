@@ -1,0 +1,63 @@
+/* ============ Floating Alert Styles ============ */
+.elearnpro-floating-alert {
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    margin: 10px;
+    pointer-events: auto;
+    z-index: 10000;
+    animation: elearnproSlideIn 0.3s ease-out;
+}
+
+@keyframes elearnproSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Disabled button state */
+.elearnpro-validate-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Warning message */
+.elearnpro-warning {
+    padding: 12px;
+    background: #fff3cd;
+    border: 1px solid #ffc107;
+    border-radius: 4px;
+    color: #856404;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Completed message base styles - extended by Elementor */
+.elearnpro-completed-message {
+    display: inline-block;
+    font-weight: 500;
+}
+
+.elearnpro-completed-message .completed-icon {
+    margin-right: 5px;
+}
+
+/* Mark complete wrapper */
+.elearnpro-mark-complete-wrapper {
+    margin: 10px 0;
+}
+
+/* Floating alert container */
+#elearnpro-floating-alert-container {
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+}
